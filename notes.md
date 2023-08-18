@@ -165,6 +165,230 @@ root.render(parent);
 
 --------------------------------------------------------------------------------------------
 
+To create npm packages
+----------------------
+
+npm init --> package.json
+
+installing the parcel --> It packages the code for production ready application
+
+npm install -D parcel
+
+-D --> Devdependencies
+
+Devdependencies --> These dependencies used in the Development phase
+
+dependencies --> These dependencies also used in the production ready applications.
+
+
+npm install --> we can recreate node_modules using package.json file and package-lock.json file.
+
+npx parcel index.html --> To run the server
+
+cdn links are not preferred way
+
+npx parcel build index.html
+
+remove app.js in package.json
+
+browserslist.dev --> browserslist
+
+
+App.js:
+-------
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+const parent = React.createElement(
+    "div",
+    { id: "parent" },[
+    React.createElement("div", { key:"child1",id: "child1" }, [
+        React.createElement("h1", {key:"ele1"}, "This is a React"), 
+        React.createElement("h2", {key:"ele2"}, "React h2 component")
+    ]),
+    React.createElement("div", { key:"child2",id: "child2" }, [
+        React.createElement("h1", {key:"ele1"}, "This is Angular Component"), 
+        React.createElement("h2", {key:"ele2"}, "Angular h2 component")
+    ])
+]);
+
+
+console.log(parent);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(parent);
+
+
+package.json:
+-------------
+"scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+},
+
+npm run start (or) npm start
+
+
+App.js
+------
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+// React Element => Object => HTMLElement(render)
+
+const heading = React.createElement("h1", {id: "heading"}, "Namaste React");
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(heading);
+
+Run the App: npm start
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+// React Element => ReactElement-JS Object => HTMLElement(render)
+
+const heading = React.createElement(
+    "h1", 
+    {id: "heading"}, 
+    "Namaste React"
+    );
+
+console.log(heading);
+
+// JSX - HTML-like or XML-like syntax
+// JSX (transpiled before it reaches the JS) - PARCEL - Babel
+// JSX => React.createElement => ReactElement-JS Object => HTMLElement(render)
+const jsxHeading = <h1 id="heading">Namaste React using JSX</h1>
+
+console.log(jsxHeading);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(jsxHeading);
+
+
+
+run the server : npm run start
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+App.js
+------
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+
+// JSX - HTML-like or XML-like syntax
+// JSX (transpiled before it reaches the JS) - PARCEL - Babel
+// JSX => Babel transpiles it to React.createElement => ReactElement-JS Object => HTMLElement(render)
+const jsxHeading = (<h1 className="head">
+    Namaste React using JSX
+    </h1>);
+
+console.log(jsxHeading);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(jsxHeading);
+
+
+# npm start or npm run start
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+// React Element
+const heading = (<h1 className="head">
+    Namaste React using JSX
+    </h1>);
+
+// React Component
+// Class Based Component - OLD
+// Functional Based Component - NEW
+
+// React Functional Component
+
+
+const HeadingComponent = () => (
+    <div id="container">
+        <h1 className="heading">Namaste React Functional Component</h1>
+    </div>
+);
+
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(<HeadingComponent/>);
+
+
+# run the server: npm start
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+const Paragraph = () => (
+    <p className="paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+);
+
+const Title = () => (
+    <h1 className="head" tabIndex="5">
+    Namaste React using JSX
+    </h1>
+);
+
+const number = 10000;
+
+const HeadingComponent = () => (
+    <div id="container">
+        <Title />
+        <Paragraph />
+        <h1 className="heading">Namaste React Functional Component</h1>
+        <h2>{number}</h2>
+    </div>
+);
+
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(<HeadingComponent/>);
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
