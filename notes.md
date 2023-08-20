@@ -379,6 +379,174 @@ root.render(<HeadingComponent/>);
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+const resObj = {
+    "info": {
+      "id": "241522",
+      "name": "Ayyappa Food Express",
+      "cloudinaryImageId": "b741cc527ffeb1aaba49cea46b335664",
+      "locality": "Town Hall Street",
+      "areaName": "Gujarathipeta",
+      "costForTwo": "₹200 for two",
+      "cuisines": [
+        "Biryani"
+      ],
+      "avgRating": 3.6,
+      "feeDetails": {
+        "restaurantId": "241522",
+        "fees": [
+          {
+            "name": "BASE_DISTANCE",
+            "fee": 100
+          },
+          {
+            "name": "BASE_TIME"
+          },
+          {
+            "name": "ANCILLARY_SURGE_FEE"
+          }
+        ],
+        "totalFee": 100
+      },
+      "parentId": "38362",
+      "avgRatingString": "3.6",
+      "totalRatingsString": "1K+",
+      "sla": {
+        "deliveryTime": 17,
+        "lastMileTravel": 0.3,
+        "serviceability": "SERVICEABLE",
+        "slaString": "17 mins",
+        "lastMileTravelString": "0.3 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2023-08-19 23:00:00",
+        "opened": true
+      },
+      "badges": {
+        
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            
+          },
+          "textBased": {
+            
+          },
+          "textExtendedBadges": {
+            
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹125 OFF",
+        "subHeader": "ABOVE ₹199",
+        "discountTag": "FLAT DEAL",
+        "discountCalloutInfo": {
+          "message": "Free Delivery",
+          "logoCtx": {
+            "logo": "v1655895371/free_delivery_logo_hqipbo.png"
+          }
+        }
+      },
+      "orderabilityCommunication": {
+        "title": {
+          
+        },
+        "subTitle": {
+          
+        },
+        "message": {
+          
+        },
+        "customIcon": {
+          
+        }
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      }
+    },
+    "analytics": {
+      
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/ayyappa-food-express-town-hall-street-gujarathipeta-srikakulam-241522",
+      "type": "WEBLINK"
+    }
+}
+
+
+
+// Normal JS Variable
+let listOfRestaurantsJS = [
+        {
+            "info": {
+              "id": "241522",
+              "name": "Ayyappa Food Express",
+              "cloudinaryImageId": "b741cc527ffeb1aaba49cea46b335664",
+              "costForTwo": "₹200 for two",
+              "cuisines": [
+                "Biryani"
+              ],
+              "avgRating": 3.6,
+              "sla": {
+                "deliveryTime": 17,
+              },
+            }
+          },
+          {
+            "info": {
+              "id": "241523",
+              "name": "Dominos",
+              "cloudinaryImageId": "b741cc527ffeb1aaba49cea46b335664",
+              "costForTwo": "₹200 for two",
+              "cuisines": [
+                "Biryani"
+              ],
+              "avgRating": 4.5,
+              "sla": {
+                "deliveryTime": 17,
+              },
+            }
+          },
+          {
+            "info": {
+              "id": "241524",
+              "name": "MCD",
+              "cloudinaryImageId": "b741cc527ffeb1aaba49cea46b335664",
+              "costForTwo": "₹200 for two",
+              "cuisines": [
+                "Biryani"
+              ],
+              "avgRating": 4.3,
+              "sla": {
+                "deliveryTime": 17,
+              },
+            }
+          },
+    ];
+
+
+
 
 
 
